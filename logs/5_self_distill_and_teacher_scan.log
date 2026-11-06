@@ -1,0 +1,22 @@
+[self-teacher] iter    1/400  loss 5.7839  (0.0s)
+[self-teacher] iter  200/400  loss 0.7652  (3.4s)
+[self-teacher] iter  400/400  loss 0.8261  (6.8s)
+[kd] iter    1/120  loss 5.7018  ce 5.7839  kd(T^2) 5.6197  (0.0s)
+[kd] iter  100/120  loss 0.8649  ce 1.0436  kd(T^2) 0.6863  (2.6s)
+[C] long-student val=0.8201  ->  distilled val=1.0974
+[teacher-C96] iter    1/200  loss 5.7899  (0.0s)
+[teacher-C96] iter  200/200  loss 0.7412  (4.5s)
+[kd] iter    1/120  loss 5.1665  ce 5.7839  kd(T^2) 4.5490  (0.0s)
+[kd] iter  100/120  loss 0.9542  ce 1.0796  kd(T^2) 0.8288  (2.4s)
+[E] C=96 params=0.295M teacher_val=0.9188 kd_val=1.2412
+[teacher-C160] iter    1/200  loss 5.8247  (0.0s)
+[teacher-C160] iter  200/200  loss 0.7159  (7.5s)
+[kd] iter    1/120  loss 5.6563  ce 5.7839  kd(T^2) 5.5286  (0.0s)
+[kd] iter  100/120  loss 1.0641  ce 1.0717  kd(T^2) 1.0565  (3.4s)
+[E] C=160 params=0.737M teacher_val=0.8322 kd_val=1.2109
+[teacher-C256] iter    1/200  loss 5.8277  (0.1s)
+[teacher-C256] iter  200/200  loss 0.7137  (14.3s)
+[kd] iter    1/120  loss 5.8330  ce 5.7839  kd(T^2) 5.8821  (0.0s)
+[kd] iter  100/120  loss 1.1065  ce 1.0627  kd(T^2) 1.1503  (4.0s)
+[E] C=256 params=1.769M teacher_val=0.8044 kd_val=1.1792
+[done] D:\vscode_only\lab_neural_network\doing\runs_distill\results_extras.json

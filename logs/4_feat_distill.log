@@ -1,0 +1,20 @@
+[data] vocab=322  train_chars=52456  val_chars=5656  block=96  batch=24
+[teacher] params = 0.737 M
+[teacher] 复用 teacher.pt  val_loss=0.8322  ppl=2.30
+[student] params = 0.147 M  (压缩率 5.0x)
+[scratch] iter    1/120  loss 5.7839  (0.0s)
+[scratch] iter   50/120  loss 1.7239  (0.9s)
+[scratch] iter  100/120  loss 1.0905  (1.7s)
+[scratch] val_loss=1.2722  ppl=3.57  agree=0.613  2.0s
+[kd] iter    1/120  loss 5.8202  ce 5.7839  kd(T^2) 5.5286  (0.1s)
+[kd] iter   50/120  loss 2.1410  ce 1.8561  kd(T^2) 2.2511  (3.0s)
+[kd] iter  100/120  loss 1.1176  ce 1.0719  kd(T^2) 1.0506  (6.1s)
+[kd] val_loss=1.2191  ppl=3.38  agree=0.648  7.3s
+
+[对比] 从零 1.2722 -> 蒸馏 1.2191  相对下降 4.2%
+[generate:teacher] 月依旧。”忽忆旧游。 诗人江边送去残灯，心中惆怅。 书生在陌上细雨了一夜守，欣然归去。 旅人又逢道：“青山可惜。”欲语还休
+[generate:scratch] 月依旧。 归客野渡恰遇远帆，泪湿到道：。”欣然无语还休。 故人舟中独对晚钟了一笑而别。”心中惆怅。 诗人望见落花了一夜听，
+[generate:kd] 月依旧。 归去。 阿远荒村梦见归去。 归客在舟，泪湿衣襟。 牧童空忆道：“青山寺归雁了一夜听，此意难平。 阿远在长亭远帆正
+[plot] saved D:\vscode_only\lab_neural_network\doing\runs_distill\curves.png
+
+[done] 结果与曲线已写入 D:\vscode_only\lab_neural_network\doing\runs_distill

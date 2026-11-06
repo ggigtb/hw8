@@ -1,0 +1,43 @@
+{
+  "C_self_distill": {
+    "long_student_params": 147456,
+    "long_student_val": 0.8200643211603165,
+    "long_student_ppl": 2.2706458834133243,
+    "long_student_time_s": 6.792924165725708,
+    "distilled_val": 1.097403857111931,
+    "distilled_ppl": 2.9963768949096288,
+    "agree_with_long_student": 0.723046875
+  },
+  "E_teacher_scan": [
+    {
+      "n_embd": 96,
+      "params": 294912,
+      "teacher_val": 0.9187817245721817,
+      "teacher_ppl": 2.5062352444951563,
+      "teacher_time_s": 4.495511531829834,
+      "kd_val": 1.2411651492118836,
+      "kd_ppl": 3.45964211660221,
+      "kd_agree": 0.6742621527777778
+    },
+    {
+      "n_embd": 160,
+      "params": 737280,
+      "teacher_val": 0.8322082221508026,
+      "teacher_ppl": 2.298388493015334,
+      "teacher_time_s": 7.534971475601196,
+      "kd_val": 1.210886898636818,
+      "kd_ppl": 3.35646017281335,
+      "kd_agree": 0.6555555555555556
+    },
+    {
+      "n_embd": 256,
+      "params": 1769472,
+      "teacher_val": 0.8044234722852707,
+      "teacher_ppl": 2.2354073529488483,
+      "teacher_time_s": 14.33726954460144,
+      "kd_val": 1.1792487978935242,
+      "kd_ppl": 3.251930428132492,
+      "kd_agree": 0.652734375
+    }
+  ]
+}

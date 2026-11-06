@@ -1,0 +1,8 @@
+[data] vocab=322  train_chars=52456  val_chars=5656  block=96  batch=24
+[teacher] params = 0.737 M
+[teacher] iter    1/200  loss 5.8247  (0.0s)
+[teacher] iter   50/200  loss 1.3378  (2.2s)
+[teacher] iter  100/200  loss 0.7932  (4.3s)
+[teacher] iter  150/200  loss 0.7316  (6.6s)
+[teacher] iter  200/200  loss 0.7159  (9.1s)
+[teacher] val_loss=0.8322  ppl=2.30  9.1s

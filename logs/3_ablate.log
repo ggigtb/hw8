@@ -1,0 +1,26 @@
+[data] vocab=322  train_chars=52456  val_chars=5656  block=96  batch=24
+[teacher] params = 0.737 M
+[teacher] 复用 teacher.pt  val_loss=0.8322  ppl=2.30
+T=1 alpha=0.3 -> val 1.4207
+T=1 alpha=0.5 -> val 1.4189
+T=1 alpha=0.7 -> val 1.4199
+T=1 alpha=0.9 -> val 1.4213
+T=2 alpha=0.3 -> val 1.4273
+T=2 alpha=0.5 -> val 1.4397
+T=2 alpha=0.7 -> val 1.4587
+T=2 alpha=0.9 -> val 1.4876
+T=4 alpha=0.3 -> val 1.4024
+T=4 alpha=0.5 -> val 1.4029
+T=4 alpha=0.7 -> val 1.4262
+T=4 alpha=0.9 -> val 1.5392
+T=8 alpha=0.3 -> val 1.4008
+T=8 alpha=0.5 -> val 1.4041
+T=8 alpha=0.7 -> val 1.4360
+T=8 alpha=0.9 -> val 1.6724
+[ablate] 最优 T=8 alpha=0.3 val=1.4008 | 最差 T=8 alpha=0.9 val=1.6724
+D:\vscode_only\lab_neural_network\doing\distill_lm.py:474: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+  ax[0].legend(fontsize=8)
+[plot] saved D:\vscode_only\lab_neural_network\doing\runs_distill\curves.png
+[plot] saved D:\vscode_only\lab_neural_network\doing\runs_distill\heatmap.png
+
+[done] 结果已写入 D:\vscode_only\lab_neural_network\doing\runs_distill
